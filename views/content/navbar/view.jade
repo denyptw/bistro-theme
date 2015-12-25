@@ -1,0 +1,30 @@
+header.navbar.navbar-default.navbar-fixed-top(navbar-default)
+     .container
+
+          //Navbar header for store logo and toggle button
+          .navbar-header
+               button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#header-menu', aria-expanded='false')
+                    i.fa.fa-align-justify
+               a.navbar-brand(href='/')
+                    img(data-src='holder.js/80x32' alt='' holder)
+
+          //Header menu
+          #header-menu.collapse.navbar-collapse
+               ul.nav.navbar-nav.navbar-left
+                    li.dropdown
+                         a.dropdown-toggle(href='' data-toggle='dropdown' sub-menu) Layout
+                              i.fa.fa-caret-down.m-l-sm
+                         ul.dropdown-menu(role='menu')
+                              li
+                                   a(href='/layout-box') Box
+                              li
+                                   a(href='/layout-width') Width
+               ul.nav.navbar-nav.navbar-right
+                    li.dropdown
+                         a.dropdown-toggle(href='' data-toggle='dropdown' sub-menu) User
+                              i.fa.fa-caret-down.m-l-sm
+                         ul.dropdown-menu(role='menu')
+                              li
+                                   a(href='') Sign in
+                              li
+                                   a(href='') Sign up

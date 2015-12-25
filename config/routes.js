@@ -33,7 +33,15 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
-    view: 'layout/home'
+          view: 'layout/home'
+  },
+
+  '/layout-box': {
+          view: 'layout/layout-box'
+  },
+
+  '/layout-width': {
+          view: 'layout/layout-width'
   }
 
   /***************************************************************************

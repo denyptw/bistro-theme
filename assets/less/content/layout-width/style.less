@@ -1,0 +1,115 @@
+/**************************************************************************
+ *
+ * Layout width.
+ *
+ **************************************************************************/
+html, body {
+     width: 100%; height: 100%;
+     margin: 0; padding: 0;
+}
+
+
+#wrapper.layout-width {
+     .navbar-default {
+          margin-bottom: 0!important;
+          background-color: #205081;
+          border-bottom: 1px solid #2E3D54;
+          .navbar-toggle {
+               border: 0!important;
+               color: #FFFFFF;
+               &:active, &:visited,
+               &:hover {
+                    background-color: #2A67A5;
+               }
+          }
+          ul.nav {
+               a {
+                    color: #FFFFFF;
+                    &:active, &:visited,
+                    &:hover {
+                         background-color: #2A67A5;
+                    }
+               }
+
+          }
+          ul.dropdown-menu {
+               a {
+                    color: #000000;
+                    &:hover {
+                         color: #FFFFFF;
+                         background-color: #205081;
+                    }
+               }
+          }
+     }
+
+     .container {
+          min-width: 100%!important;
+     }
+
+     .container.full-height {
+          margin-top: 50px;
+          min-height: 600px;
+     }
+}
+
+
+
+
+
+
+@media(min-width:992px){
+     #wrapper.layout-width {
+          .navbar-nav > li > a, .navbar-brand {
+               padding-top:10px !important;
+               padding-bottom:0 !important;
+               height: 42px;
+          }
+          .navbar {min-height:42px !important;}
+
+          .navbar-brand {
+               margin-top: -4px;
+          }
+
+          #header-menu {
+               .navbar-right {
+                    margin-right: 5px !important;
+               }
+          }
+     }
+}
+
+
+@media(min-width:768px){
+}
+
+
+@media(max-width:767px){
+     #wrapper.layout-width {
+          .navbar-brand {
+               padding: 10px 15px;
+          }
+
+          .navbar-default {
+               .navbar-collapse {
+                    border: 1px solid #2E3D54!important;
+               }
+               ul.dropdown-menu {
+                    a {
+                         color: #FFFFFF;
+                         &:hover {
+                              color: #337AB7;
+                              background-color: #205081;
+                         }
+                    }
+               }
+          }
+
+          .container {
+          }
+
+          .container.full-height {
+          }
+
+     }
+}
