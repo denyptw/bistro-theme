@@ -48,6 +48,10 @@ module.exports.routes = {
           view: 'layout/layout-width'
   },
 
+  '/payment-bill': {
+          view: 'layout/payment-bill'
+  },
+
   '/payment-history': {
           view: 'layout/payment-history'
   },

@@ -1,0 +1,35 @@
+doctype html
+html(lang='en')
+     head
+          include ../content/external-style
+     body
+
+
+          #wrapper.layout-width
+               include ../content/navbar/view
+               .container.full-height
+                    include ../content/personal-header/view
+                    .row
+                         .col-md-12
+                              div.table-responsive.m-t-xxs
+                                   table.table.table-bordered.table-striped
+                                        thead
+                                             tr
+                                                  th Gaji
+                                                  th Jumlah
+                                        tbody
+                                             tr.extra-menu
+                                                  td   Gaji Dasar
+                                                  td   Rp 10000.00
+                                             tr.extra-menu
+                                                  td   Gaji Insentif
+                                                  td   Rp 10000.00
+                                             tr
+                                                  td(colspan='1').text-right
+                                                       strong Total Pembayaran
+                                                  td(rowspan='2') Rp 24000.00
+
+
+
+
+          include ../content/external-javascript
