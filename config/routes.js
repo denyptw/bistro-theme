@@ -42,6 +42,10 @@ module.exports.routes = {
 
   '/layout-width': {
           view: 'layout/layout-width'
+  },
+
+  '/sign-in': {
+          view: 'layout/sign-in'
   }
 
   /***************************************************************************

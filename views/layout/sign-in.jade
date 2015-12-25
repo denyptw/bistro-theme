@@ -1,0 +1,69 @@
+doctype html
+html(lang='en')
+     head
+          include ../content/external-style
+     body
+
+
+          #wrapper.layout-box
+               include ../content/navbar/view
+               .container.full-height
+                    .row
+                         #content.col-md-12
+
+                              #layout-form.row
+                                   .col-md-8.col-md-offset-2.well.well-lg
+                                        form.form-horizontal(action='{base_url}action/sign-in', method='POST')
+                                             h2 Sign in
+                                             hr
+                                             .alert.alert-danger.alert-dismissible
+                                                  button.close(type='button', data-dismiss='alert', aria-label='Close')
+                                                       span(aria-hidden='true') ×
+                                                  strong Warning!
+                                                  p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                             .form-group
+                                                  label.col-sm-2.control-label E-mail
+                                                  .col-sm-10
+                                                       input.form-control(name='email', type='email', required='required')
+                                             .form-group
+                                                  label.col-sm-2.control-label Password
+                                                  .col-sm-10
+                                                       input.form-control(name='password', type='password', required='required')
+                                             .form-group
+                                                  .col-sm-offset-2.col-sm-10
+                                                       .checkbox
+                                                            label
+                                                                 input(type='checkbox')
+                                                                 | Remember me
+                                             .form-group
+                                                  .col-sm-offset-2.col-sm-10
+                                                       button.btn.btn-primary(type='submit') Sign in
+                                             .text or
+                                             hr
+                                             .social-button.text-center
+                                                  ul.list-unstyled.list-inline
+                                                       li
+                                                            a.btn.btn-default(href='')
+                                                                 .left
+                                                                      i.fa.fa-google
+                                                                 .right Google
+                                                       li
+                                                            a.btn.btn-default(href='')
+                                                                 .left
+                                                                      i.fa.fa-facebook
+                                                                 .right Facebook
+                                                       li
+                                                            a.btn.btn-default(href='')
+                                                                 .left
+                                                                      i.fa.fa-twitter
+                                                                 .right Twitter
+                                                       li
+                                                            a.btn.btn-default(href='')
+                                                                 .left
+                                                                      i.fa.fa-bitbucket
+                                                                 .right Bitbucket
+
+
+
+
+          include ../content/external-javascript
