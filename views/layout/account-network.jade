@@ -1,0 +1,32 @@
+doctype html
+html(lang='en')
+     head
+          include ../content/external-style
+     body
+
+
+          #wrapper.layout-width
+               include ../content/navbar/view
+               .container.full-height
+                    include ../content/personal-header/view
+                    .row
+                         #content
+                              .user-list
+                                   - for (var i = 0; i < 9; i++) {
+                                        .col-md-4.col-sm-6.col-xs-12.user
+                                             .well
+                                                  .left
+                                                       img(data-src='holder.js/60x60' alt='' holder)
+                                                  .center
+                                                       ul.list-unstyled
+                                                            li
+                                                                 a(href='')
+                                                                      h4 Deny Prasetia Taruma W
+                                                            li   100 followers
+                                             .clearfix
+                                   - }
+
+
+
+
+          include ../content/external-javascript

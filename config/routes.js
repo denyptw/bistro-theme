@@ -36,6 +36,10 @@ module.exports.routes = {
        view: 'layout/404'
   },
 
+  '/account-network': {
+          view: 'layout/account-network'
+  },
+
   '/': {
           view: 'layout/home'
   },

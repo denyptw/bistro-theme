@@ -1,0 +1,61 @@
+.user-list {
+     padding-right: 10px;
+     .user {
+          padding-right: 0!important;
+          margin-top: -5px;
+          .well {
+               background-color: #FFFFFF;
+               display: table;
+               padding: 5px 10px;
+               width: 100%;
+               border: 1px solid #e0e0e0;
+               box-shadow: none;
+               .left {
+                    vertical-align: middle;
+                    display: table-cell;
+                    width: 75px;
+                    padding-right: 15px;
+               }
+               .center {
+                    vertical-align: middle;
+                    display: table-cell;
+                    width: 100%;
+               }
+               .right {
+                    vertical-align: middle;
+                    display: table-cell;
+                    width: 70px;
+               }
+          }
+     }
+}
+
+
+
+
+
+
+@media(min-width:992px){
+}
+
+
+@media(min-width:768px){
+}
+
+
+@media(max-width:767px){
+     .user-list {
+          padding-left: 0; padding-right: 15px;
+          .user {
+               text-align: center;
+               .well {
+                    .left {
+                         display: table-row;
+                    }
+                    .right {
+                         display: table-row;
+                    }
+               }
+          }
+     }
+}
