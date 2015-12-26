@@ -40,6 +40,10 @@ module.exports.routes = {
           view: 'layout/account-network'
   },
 
+  '/employee': {
+          view: 'layout/employee'
+  },
+
   '/': {
           view: 'layout/home'
   },
